@@ -48,6 +48,9 @@ mongoose
   .catch((e) => {
     console.log("Error de conexióna a Base de datos", e);
   });
+
+
+  
   
 
 console.log(process.env.USER);
