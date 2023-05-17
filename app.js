@@ -37,9 +37,10 @@ require('./routes/authentication')(app);
 
 // Conexión con la base de datos
 mongoose.set('strictQuery', true);
-//const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSS}@clustersnutri3dbd.9skyq9n.mongodb.net/${process.env.BD}?retryWrites=true&w=majority`;
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSS}@snutri3dcluster.brblj4q.mongodb.net/${process.env.BD}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://mongoatlasmaster:Z93no3Mb6WXLpxrm@snutri3dcluster.brblj4q.mongodb.net/snutri3dCluster?retryWrites=true&w=majority`;
+//const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSS}@snutri3dcluster.brblj4q.mongodb.net/${process.env.BD}?retryWrites=true&w=majority`;
 //const uri = "mongodb://localhost:27017";
+
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
@@ -50,7 +51,7 @@ mongoose
   });
 
 
-  
+
   
 
 console.log(process.env.USER);
