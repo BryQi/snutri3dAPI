@@ -8,9 +8,7 @@ var logger = require('morgan');
 require("dotenv").config();
 const mongoose = require('mongoose');
 
-var Parse = require('parse/node');
-Parse.initialize("zhWnVBRSymNTZAJhQCaMDYjtd9cjNNZqAMiYWRAC","h0xgpFjm0Hdtj065WkOwUR8VkwCXHQBWu0HIYAiF"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-Parse.serverURL = 'https://parseapi.back4app.com/'
+
 
 //const Account = mongoose.model('accounts');
 
